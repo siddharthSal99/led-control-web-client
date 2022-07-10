@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  background-color: rgb(36, 32, 40);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -35,4 +41,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.color-palette-select, .time-picker, .force-enable-switch, .pattern-select, .login-wrapper {
+  /* display: flex; */
+  text-align: center;
+  background-color: rgb(165, 61, 106);
+  border-bottom: #282c34 solid 3px;
+  padding: 10px;
+
+  
+}
+
+.page-title {
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(36, 32, 40);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.section-header {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
 }
