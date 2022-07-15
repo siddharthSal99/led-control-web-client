@@ -1,6 +1,7 @@
 import '../App.css';
 import React, {Component} from 'react';
 import LEDStripDataService from '../service/ledStripDataService';
+import config from '../config/config';
 
 class Login extends Component {
 
@@ -13,8 +14,8 @@ class Login extends Component {
         }
 
         this.dataAccessObject = new LEDStripDataService();
-        this.scheme = `http://`;
-        this.base_url = `localhost:8080`;
+        this.scheme = config.baseScheme;
+        this.base_url = config.baseURL;
     }
 
     updateUsername(value) {

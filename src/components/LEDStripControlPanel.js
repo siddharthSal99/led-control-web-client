@@ -5,6 +5,7 @@ import TimeSetter from './TimeSetter';
 import ForceEnableSwitch from './ForceEnableSwitch';
 import PatternSelector from './PatternSelector';
 import LEDStripDataService from '../service/ledStripDataService';
+import config from '../config/config';
 
 
 class LEDStripControlPanel extends Component {
@@ -26,8 +27,8 @@ class LEDStripControlPanel extends Component {
       }
   
       this.dataAccessObject = new LEDStripDataService();
-      this.scheme = `http://`;
-      this.base_url = `localhost:8080`;
+      this.scheme = config.baseScheme;
+      this.base_url = config.baseURL;
   
     }
   

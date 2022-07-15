@@ -1,5 +1,6 @@
 import '../App.css';
 import React, {Component} from 'react';
+import config from '../config/config';
 
 
 class ForceEnableSwitch extends Component {
@@ -11,8 +12,8 @@ class ForceEnableSwitch extends Component {
             forcedState: this.props.forcedState
         }
 
-        this.scheme = `http://`;
-        this.base_url = `localhost:8080`;
+        this.scheme = config.baseScheme;
+        this.base_url = config.baseURL;
     }
 
     updateEnableSelectorState(value) {

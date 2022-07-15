@@ -1,6 +1,7 @@
 import '../App.css';
 import React, {Component} from 'react';
 import TimePicker from 'react-time-picker';
+import config from '../config/config';
 
 
 class TimeSetter extends Component {
@@ -13,8 +14,8 @@ class TimeSetter extends Component {
             prevTime: this.props.time
         }
 
-        this.scheme = `http://`;
-        this.base_url = `localhost:8080`;
+        this.scheme = config.baseScheme;
+        this.base_url = config.baseURL;
         this.jsonUpdate = this.props.jsonUpdateString;
         this.endpoint = this.props.endpoint;
     }
